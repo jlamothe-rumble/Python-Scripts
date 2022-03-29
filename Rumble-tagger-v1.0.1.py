@@ -2,7 +2,6 @@
 
 __version__='1.0.2'
 __date__='2022/03/29'
-from re import T
 import sys
 import os
 import time
