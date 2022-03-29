@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-__version__='1.0.1'
-__date__='2022/03/10'
+__version__='1.0.2'
+__date__='2022/03/29'
 from re import T
 import sys
 import os
@@ -13,7 +13,7 @@ import requests
 import json
 import csv
 import pandas as pd
-import io
+from io import StringIO
 import numpy
 import warnings
 import signal
@@ -47,8 +47,8 @@ logfile = logpath + logfilename + "-" + datetimestamp + file_extension
 errlist = []
 partial_success = 0
 scheme = "https://"
-host = "demo"
-domain = ".rumble.run"
+host = "demo" #Change for your host. 
+domain = ".rumble.run" #Chnage for your domain. 
 base_path = "/api/v1.0"
 base_url = scheme + host + domain + base_path
 working_dir=os.getcwd()
